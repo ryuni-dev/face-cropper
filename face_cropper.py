@@ -1,5 +1,6 @@
 import sys
 import os
+import io
 import numpy as np
 import dlib 
 from PIL import Image
@@ -20,16 +21,16 @@ class FaceCropper():
 
                 cnt = 0
                 for f in faces:
-                    np_img = np_img[f.top():f.bottom(), f.left():f.right()]
-                    img = Image.fromarray(np_img)
+                    crop_img = np_img[f.top():f.bottom(), f.left():f.right()]
+                    crop_img = Image.fromarray(crop_img)
                     if len(faces) == 1:
-                        img.save(out_path + file)
+                        crop_img.save(out_path + file)
                     elif len(faces) > 1:
-                        img.save(out_path + cnt + ' ' + file)
+                        crop_img.save(out_path + str(cnt) + '_' + file)
                         cnt += 1
-            except:
+            except Exception as e:
                 print(f'{file} failed')
-
+                print(e)
 
 if __name__ == '__main__':
     in_path = sys.argv[1]
