@@ -2,7 +2,8 @@
 
 ## Introduction
 Crop faces from your image using dlib!!
-![Crop-faces](main.png)
+
+![Crop-faces](main_img.png)
 ## Requirements
 ```
 conda install -c conda-forge dlib
