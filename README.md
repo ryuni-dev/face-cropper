@@ -1,7 +1,7 @@
 # face-cropper
 
 ## Introduction
-Crop faces from image using dlib!!
+Crop faces from your image using dlib!!
 ![Crop-faces](main.png)
 ## Requirements
 ```
@@ -15,5 +15,5 @@ python face_cropper.py [input PATH of image] [output PATH to save cropped image]
 
 **[Example]**
 ```
-python face_cropper.py ./data/ ./output/
+python face_cropper.py ./image/input/ ./image/output/
 ```
