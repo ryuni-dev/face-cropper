@@ -1,17 +1,17 @@
 # face-cropper
 
-## requirement
+## Requirements
 ```
 conda install -c conda-forge dlib
 conda install -c anaconda pillow
 ```
 
-## usage 
+## Usage 
 ```
 python face_cropper.py [input PATH of image] [output PATH to save cropped image]
 ```
 
-**example**
+**[Example]**
 ```
 python face_cropper.py ./data/ ./output/
-```s
+```
